@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Deshbord</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                        <span class="title">Brand Name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- toggle -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="search">
+                    <label for="search">
+                        <input type="text" id="search" placeholder="Search...">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <!-- user -->
+                <div class="user">
+                    <img src="img/member-1.png" alt="" onclick="SettinMenu()">
+                    <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+                </div>
+            </div>
+            <!-- <div class="setting-menu">
+                <div class="setting-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>user Name</p>
+                            <a href="#">See Your Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Dashbord box -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="number">1909</div>
+                        <div class="cardName">Dashboard</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">1909</div>
+                        <div class="cardName">Dashboard</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">1909</div>
+                        <div class="cardName">Dashboard</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="number">1909</div>
+                        <div class="cardName">Dashboard</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Details -->
+            <div class="details">
+                <div class="returnOrder">
+                    <div class="cardheadr">
+                        <h2>Recent Order</h2>
+                        <a href="" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Product Nmae</td>
+                                <td>Price</td>
+                                <td>Payments</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MacBookAir</td>
+                                <td>90,000</td>
+                                <td>Done</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>MacBookAir</td>
+                                <td>90,000</td>
+                                <td>Done</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>MacBookAir</td>
+                                <td>90,000</td>
+                                <td>Done</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>MacBookAir</td>
+                                <td>90,000</td>
+                                <td>Done</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>MacBookAir</td>
+                                <td>90,000</td>
+                                <td>Done</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+
+
+                    </table>
+                </div>
+
+
+                <!-- nwecustomert -->
+
+                <div class="recentCustomer">
+                    <div class="cardheadr">
+                        <h2>Recent Customer</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgbx"><img src="img/member-1.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Alina<br><span>USA</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgbx"><img src="img/member-2.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Sandy<br><span>USA</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgbx"><img src="img/member-3.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Alina<br><span>USA</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgbx"><img src="img/member-2.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Deep<br><span>USA</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
